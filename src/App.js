@@ -6,7 +6,7 @@ import Clients from './components/home/Clients';
 
 function App() {
   return (
-    <div className="bg-black relative overflow-hidden max-w-[1920px]">
+    <div className="relative overflow-hidden bg-section-layer bg-cover bg-no-repeat max-w-[1920px]">
       <Analytics />
       <Meet />
       <Work />

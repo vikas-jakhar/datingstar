@@ -13,7 +13,7 @@ const PrimaryHeading = ({
         <h2
             {...props}
             style={{ fontSize: `clamp(${minFontSize}px, ${sizeReducer}vw, ${maxFontSize}px)` }}
-            className={`${className} font-raleway font-semibold text-white text-center leading-custom-xl`}
+            className={`${className} font-raleway font-semibold text-white text-center md:leading-custom-xl`}
         >
             {text}
             <span className={`font-raleway font-semibold text-off-yellow`}> {yellowText}</span>

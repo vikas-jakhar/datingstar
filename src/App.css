@@ -25,13 +25,13 @@ input[type="number"]::-webkit-outer-spin-button {
 .clients .swiper-button-prev {
   top: auto !important;
   bottom: -110px;
-  left: 45% !important;
+  left: 40% !important;
 }
 
 .clients .swiper-button-next {
   top: auto !important;
   bottom: -110px;
-  right: 45% !important;
+  right: 40% !important;
 }
 
 .clients .swiper-button-prev::after {
@@ -40,4 +40,14 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .clients .swiper-button-next::after {
   content: '';
+}
+
+@media (min-width:640px) {
+  .clients .swiper-button-prev {
+    left: 45% !important;
+  }
+
+  .clients .swiper-button-next {
+    right: 45% !important;
+  }
 }

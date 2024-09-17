@@ -12,7 +12,7 @@ import comma from "../../assets/images/webp/comma.png";
 
 const Clients = () => {
     return (
-        <div className='py-24'>
+        <div className='lg:py-24 md:py-16 py-10'>
             <div className="container mb-28 pb-1">
                 <PrimaryHeading text="Here’s what our" yellowText="clients say" />
                 <PrimaryHeading text="about us...." yellowText="" />
