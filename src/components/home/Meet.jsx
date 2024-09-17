@@ -65,19 +65,19 @@ const Meet = () => {
               </SwiperSlide>
             ))}
           </Swiper>
-          <div className="swiper-button-prev cursor-pointer absolute top-[50%] left-0 -translate-y-1/2 z-10">
+          <div className="swiper-button-prev group transition_slow hover:bg-white rounded-full w-[34px] h-[34px] cursor-pointer absolute top-[50%] left-0 -translate-y-1/2 z-10">
             <div className="flex rounded-full w-[34px] h-[34px] justify-center items-center">
-              <Icon iconName="leftArrow" />
+              <Icon hoverClass='group-hover:fill-black transition_slow' iconName="leftArrow" />
             </div>
           </div>
-          <div className="swiper-button-next cursor-pointer absolute top-[50%] right-0 -translate-y-1/2 z-10">
+          <div className="swiper-button-next group transition_slow hover:bg-white rounded-full cursor-pointer absolute top-[50%] right-0 -translate-y-1/2 z-10">
             <div className="flex rounded-full w-[34px] h-[34px] justify-center items-center">
-              <Icon className='rotate-180' iconName="leftArrow" />
+              <Icon className='rotate-180' hoverClass='group-hover:fill-black transition_slow' iconName="leftArrow" />
             </div>
           </div>
         </div>
         <div className="flex justify-center pb-11 mb-0.5">
-          <PrimaryButton className='w-[288px] h-[48px] mt-[60px]' text='Book A Meeting With Our Team!' />
+          <PrimaryButton hoverClass='group-hover:bg-white' className='w-[288px] h-[48px] mt-[60px]' text='Book A Meeting With Our Team!' />
         </div>
       </div>
       <img src={star} alt="star" className='bottom-24 right-0 absolute' />

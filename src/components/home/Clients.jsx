@@ -39,8 +39,8 @@ const Clients = () => {
                     >
                         {Array.from({ length: 5 }).map((_, idx) => (
                             <SwiperSlide key={idx}>
-                                <div className="flex flex-col bg-off-white items-center p-5 max-w-[558px] border border-dark-gray rounded-[22px] relative">
-                                    <img src={idx === 0 ? jaydon : bator} alt="client" />
+                                <div className="flex flex-col backdrop-blur-sm bg-off-white items-center p-5 max-w-[558px] border border-dark-gray rounded-[22px] relative">
+                                    <img src={idx === 0 || idx === 2 || idx === 4 ? jaydon : bator} alt="client" />
                                     <Icon className="my-4" iconName="starIcon" />
                                     <PrimaryParagraph className="text-center max-w-[515px]" text="Lorem ipsum dolor sit amet consectetur. Interdum est donec lacus vitae elit dictum eros cras sagittis. Ac in sem mi ipsum urna. Sed feugiat semper nulla amet sit in sed interdum proin. Molestie volutpat fermentum amet tempor in nulla elit viverra sed." />
                                     <p className="font-raleway font-semibold text-2xl mt-4 text-off-yellow">Jaydon Bator</p>
@@ -50,14 +50,14 @@ const Clients = () => {
                             </SwiperSlide>
                         ))}
                     </Swiper>
-                    <div className="swiper-button-prev cursor-pointer absolute -bottom-24 top-auto z-10">
+                    <div className="swiper-button-prev group transition_slow hover:bg-white rounded-full cursor-pointer absolute -bottom-24 top-auto z-10">
                         <div className="flex rounded-full w-[34px] h-[34px] justify-center items-center">
-                            <Icon iconName="leftArrow" />
+                            <Icon hoverClass='group-hover:fill-black transition_slow' iconName="leftArrow" />
                         </div>
                     </div>
-                    <div className="swiper-button-next cursor-pointer absolute -bottom-24 top-auto z-10">
+                    <div className="swiper-button-next group transition_slow hover:bg-white rounded-full cursor-pointer absolute -bottom-24 top-auto z-10">
                         <div className="flex rounded-full w-[34px] h-[34px] justify-center items-center">
-                            <Icon className='rotate-180' iconName="leftArrow" />
+                            <Icon hoverClass='group-hover:fill-black transition_slow' className='rotate-180' iconName="leftArrow" />
                         </div>
                     </div>
                 </div>
