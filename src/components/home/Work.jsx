@@ -3,11 +3,12 @@ import PrimaryParagraph from '../custom-ui/PrimaryParagraph'
 import PrimaryHeading from '../custom-ui/PrimaryHeading'
 import Icon from '../common/Icons'
 import PrimaryButton from '../custom-ui/PrimaryButton'
+import ellipse from "../../assets/images/webp/yellow-ellipse.webp";
 
 const Work = () => {
     return (
-        <div className='sm:py-14 py-7'>
-            <div className="container my-1.5">
+        <div className='sm:py-14 py-7 relative'>
+            <div className="container my-1.5 relative z-[1]">
                 <div className="flex flex-col lg:flex-row gap-7 items-center justify-between">
                     <div className="max-w-[474px] w-full flex flex-col items-center lg:items-start">
                         <PrimaryHeading className='lg:text-start' text='Let’s work together' yellowText='' />
@@ -33,6 +34,7 @@ const Work = () => {
                     </div>
                 </div>
             </div>
+            <img src={ellipse} alt="ellipse" className='bottom-16 left-10 absolute' />
         </div>
     )
 }

@@ -3,11 +3,13 @@ import PrimaryHeading from '../custom-ui/PrimaryHeading'
 import PrimaryParagraph from '../custom-ui/PrimaryParagraph'
 import Icon from '../common/Icons'
 import { ANALYTICS_DATA } from '../../utils/Helper'
+import star from "../../assets/images/webp/star.webp";
+import ellipse from "../../assets/images/webp/ellipse.webp";
 
 const Analytics = () => {
     return (
         <div className='lg:py-24 py-10 sm:py-16 relative'>
-            <div className="container xl:pt-24 mt-1">
+            <div className="container xl:pt-24 mt-1 relative z-[1]">
                 <PrimaryHeading text='Why' yellowText='DatingStars?' />
                 <PrimaryParagraph className='mt-5 text-center max-w-[759px] mx-auto' text='DatingStars has been founded in 2023, but our management team has 10 years+ experience in the casual dating vertical and has developed the best products available in the market.' />
                 <div className="pt-9 flex flex-wrap -mx-3 flex-row">
@@ -22,6 +24,8 @@ const Analytics = () => {
                     ))}
                 </div>
             </div>
+            <img src={star} alt="star" className='absolute top-5 right-0' />
+            <img src={ellipse} alt="star" className='absolute bottom-0 left-14' />
         </div>
     )
 }

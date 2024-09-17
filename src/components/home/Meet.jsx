@@ -3,14 +3,16 @@ import PrimaryHeading from '../custom-ui/PrimaryHeading';
 import PrimaryParagraph from '../custom-ui/PrimaryParagraph';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import { Navigation } from 'swiper/modules'; // Ensure this import path is correct
+import { Navigation } from 'swiper/modules';
 import { MEET_DATA } from '../../utils/Helper';
 import Icon from './../common/Icons';
+import PrimaryButton from '../custom-ui/PrimaryButton';
+import star from "../../assets/images/webp/yellow-star.webp";
 
 const Meet = () => {
   return (
-    <div className='py-12'>
-      <div className="container my-1.5">
+    <div className='py-12 relative'>
+      <div className="container my-1.5 relative z-[1]">
         <PrimaryHeading text='Meet' yellowText='DatingStars' />
         <PrimaryParagraph className='mt-4 pb-1 text-center w-fit mx-auto' text='Lorem ipsum dolor sit amet consectetur. Interdum est donec lacus vitae elit dictum eros cras sagittis.' />
         <div className="mt-14 relative meet">
@@ -74,7 +76,11 @@ const Meet = () => {
             </div>
           </div>
         </div>
+        <div className="flex justify-center pb-11 mb-0.5">
+          <PrimaryButton className='w-[288px] h-[48px] mt-[60px]' text='Book A Meeting With Our Team!' />
+        </div>
       </div>
+      <img src={star} alt="star" className='bottom-24 right-0 absolute' />
     </div>
   );
 }
