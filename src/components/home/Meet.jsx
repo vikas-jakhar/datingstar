@@ -3,7 +3,7 @@ import PrimaryHeading from '../custom-ui/PrimaryHeading';
 import PrimaryParagraph from '../custom-ui/PrimaryParagraph';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Autoplay } from 'swiper/modules';
 import { MEET_DATA } from '../../utils/Helper';
 import Icon from './../common/Icons';
 import PrimaryButton from '../custom-ui/PrimaryButton';
@@ -24,7 +24,12 @@ const Meet = () => {
               nextEl: '.swiper-button-next',
               prevEl: '.swiper-button-prev',
             }}
-            modules={[Navigation]}
+            modules={[Navigation, Autoplay]}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+            }}
+            speed={1000}
             breakpoints={{
               320: {
                 slidesPerView: 1,
@@ -76,11 +81,11 @@ const Meet = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center pb-11 mb-0.5">
+        <div className="flex justify-center md:pb-11 mb-0.5">
           <PrimaryButton hoverClass='group-hover:bg-white' className='w-[288px] h-[48px] mt-[60px]' text='Book A Meeting With Our Team!' />
         </div>
       </div>
-      <img src={star} alt="star" className='bottom-24 right-0 absolute' />
+      <img src={star} alt="star" className='bottom-24 right-0 absolute pointer-events-none' />
     </div>
   );
 }

@@ -34,7 +34,7 @@ const Work = () => {
                     </div>
                 </div>
             </div>
-            <img src={ellipse} alt="ellipse" className='bottom-16 left-10 absolute' />
+            <img src={ellipse} alt="ellipse" className='bottom-16 left-10 absolute pointer-events-none' />
         </div>
     )
 }

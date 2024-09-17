@@ -4,7 +4,7 @@ import Icon from './../common/Icons';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Autoplay } from 'swiper/modules';
 import jaydon from "../../assets/images/svg/jaydon.svg";
 import bator from "../../assets/images/svg/bator.svg";
 import PrimaryParagraph from '../custom-ui/PrimaryParagraph';
@@ -25,7 +25,12 @@ const Clients = () => {
                             nextEl: '.swiper-button-next',
                             prevEl: '.swiper-button-prev',
                         }}
-                        modules={[Navigation]}
+                        modules={[Navigation, Autoplay]}
+                        autoplay={{
+                            delay: 3000,
+                            disableOnInteraction: false,
+                        }}
+                        speed={1000}
                         breakpoints={{
                             320: {
                                 slidesPerView: 1,

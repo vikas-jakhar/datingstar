@@ -24,8 +24,8 @@ const Analytics = () => {
                     ))}
                 </div>
             </div>
-            <img src={star} alt="star" className='absolute top-5 right-0' />
-            <img src={ellipse} alt="star" className='absolute bottom-0 left-14' />
+            <img src={star} alt="star" className='absolute top-5 right-0 pointer-events-none' />
+            <img src={ellipse} alt="star" className='absolute bottom-0 left-14 pointer-events-none' />
         </div>
     )
 }
