@@ -1,6 +1,6 @@
-import tower from "../assets/images/webp/tower.png";
-import road from "../assets/images/webp/road-img.png";
-import city from "../assets/images/webp/city-img.png";
+import tower from "../assets/images/webp/tower.webp";
+import road from "../assets/images/webp/road-img.webp";
+import city from "../assets/images/webp/city-img.webp";
 
 export const ANALYTICS_DATA = [
     { icon: "headPhoneIcon", title: "Custom payouts", text: "Trusted publisher receive payments either monthly and bi-monthly" },

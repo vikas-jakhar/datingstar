@@ -6,8 +6,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'form-layer': "url('./assets/images/webp/form-layer.png')",
-        'section-layer': "url('./assets/images/webp/section-layer.png')",
+        'form-layer': "url('./assets/images/webp/form-layer.webp')",
+        'section-layer': "url('./assets/images/webp/section-layer.webp')",
       },
       fontFamily: {
         'raleway': "'Raleway', sans-serif",

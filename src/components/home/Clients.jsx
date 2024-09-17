@@ -4,11 +4,11 @@ import Icon from './../common/Icons';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules'; 
+import { Navigation } from 'swiper/modules';
 import jaydon from "../../assets/images/svg/jaydon.svg";
 import bator from "../../assets/images/svg/bator.svg";
 import PrimaryParagraph from '../custom-ui/PrimaryParagraph';
-import comma from "../../assets/images/webp/comma.png";
+import comma from "../../assets/images/webp/comma.webp";
 
 const Clients = () => {
     return (
