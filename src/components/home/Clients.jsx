@@ -4,7 +4,7 @@ import Icon from './../common/Icons';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules'; // Correct import path for Navigation module
+import { Navigation } from 'swiper/modules'; 
 import jaydon from "../../assets/images/svg/jaydon.svg";
 import bator from "../../assets/images/svg/bator.svg";
 import PrimaryParagraph from '../custom-ui/PrimaryParagraph';

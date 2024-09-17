@@ -34,12 +34,20 @@ input[type="number"]::-webkit-outer-spin-button {
   right: 40% !important;
 }
 
-.clients .swiper-button-prev::after {
-  content: '';
+.swiper-button-prev::after {
+  content: '' !important;
 }
 
-.clients .swiper-button-next::after {
-  content: '';
+.swiper-button-next::after {
+  content: '' !important;
+}
+
+.meet .swiper-button-next {
+  right: -50px !important;
+}
+
+.meet .swiper-button-prev {
+  left: -50px !important;
 }
 
 @media (min-width:640px) {
