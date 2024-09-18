@@ -1,4 +1,3 @@
-import React from 'react';
 import PrimaryHeading from '../custom-ui/PrimaryHeading';
 import Icon from './../common/Icons';
 import 'swiper/css';
@@ -44,11 +43,11 @@ const Clients = () => {
                     >
                         {Array.from({ length: 5 }).map((_, idx) => (
                             <SwiperSlide key={idx}>
-                                <div className="flex flex-col backdrop-blur-sm bg-off-white items-center p-5 max-w-[558px] border border-dark-gray rounded-[22px] relative">
+                                <div data-aos="zoom-in" className="flex flex-col backdrop-blur-sm bg-off-white items-center p-5 max-w-[558px] border border-dark-gray rounded-[22px] relative">
                                     <img src={idx === 0 || idx === 2 || idx === 4 ? jaydon : bator} alt="client" />
                                     <Icon className="my-4" iconName="starIcon" />
                                     <PrimaryParagraph className="text-center max-w-[515px]" text="Lorem ipsum dolor sit amet consectetur. Interdum est donec lacus vitae elit dictum eros cras sagittis. Ac in sem mi ipsum urna. Sed feugiat semper nulla amet sit in sed interdum proin. Molestie volutpat fermentum amet tempor in nulla elit viverra sed." />
-                                    <p className="font-raleway font-semibold text-2xl mt-4 text-off-yellow">Jaydon Bator</p>
+                                    <p data-aos="zoom-in" className="font-raleway font-semibold text-2xl mt-4 text-off-yellow">Jaydon Bator</p>
                                     <PrimaryParagraph text="Sr. Designer" />
                                     <img src={comma} alt="comma" className="absolute -left-3 -bottom-3" />
                                 </div>

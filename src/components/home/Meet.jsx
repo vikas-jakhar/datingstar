@@ -1,4 +1,3 @@
-import React from 'react';
 import PrimaryHeading from '../custom-ui/PrimaryHeading';
 import PrimaryParagraph from '../custom-ui/PrimaryParagraph';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -51,16 +50,16 @@ const Meet = () => {
           >
             {MEET_DATA.map((i, idx) => (
               <SwiperSlide key={idx}>
-                <div className='flex overflow-hidden bg-white relative max-w-[364px] w-full rounded-[22px] group'>
+                <div data-aos="zoom-in" className='flex overflow-hidden relative max-w-[364px] w-full rounded-[22px] group'>
                   <img src={i.img} alt="tower" className='w-full transition_slow group-hover:scale-110' />
                   <div className='p-2.5 absolute bottom-[21px] left-1/2 -translate-x-1/2 border rounded-md w-11/12 xl:w-full max-w-[309px] min-h-[75px] backdrop-blur-sm bg-[#0000001A]'>
-                    <p className='text-white text-base font-normal font-inter'>{i.title}</p>
+                    <p data-aos="zoom-in" className='text-white text-base font-normal font-inter'>{i.title}</p>
                     <div className='flex items-center justify-between mt-[6px]'>
-                      <div className='flex items-center gap-2'>
+                      <div data-aos="zoom-in" className='flex items-center gap-2'>
                         <Icon iconName='calendarIcon' />
                         <p className='text-white text-xs font-normal font-inter'>{i.date}</p>
                       </div>
-                      <div className='flex items-center gap-2'>
+                      <div data-aos="zoom-in" className='flex items-center gap-2'>
                         <Icon iconName='locationIcon' />
                         <p className='text-white text-xs font-normal font-inter'>{i.text}</p>
                       </div>
@@ -81,11 +80,11 @@ const Meet = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center md:pb-11 mb-0.5">
+        <div className="flex justify-center md:pb-11 mb-0.5" data-aos="zoom-in">
           <PrimaryButton hoverClass='group-hover:bg-white' className='w-[288px] h-[48px] mt-[60px]' text='Book A Meeting With Our Team!' />
         </div>
       </div>
-      <img src={star} alt="star" className='bottom-24 right-0 absolute pointer-events-none' />
+      <img src={star} alt="star" className='bottom-24 right-0 absolute pointer-events-none animate-spin animate-duration' />
     </div>
   );
 }

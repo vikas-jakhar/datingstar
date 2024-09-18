@@ -10,7 +10,7 @@ const PrimaryHeading = ({
     const sizeReducer = (100 / reduceBelow) * maxFontSize;
 
     return (
-        <h2
+        <h2 data-aos="zoom-in"
             {...props}
             style={{ fontSize: `clamp(${minFontSize}px, ${sizeReducer}vw, ${maxFontSize}px)` }}
             className={`${className} font-raleway font-semibold text-white text-center md:leading-custom-xl`}
