@@ -12,10 +12,10 @@ import comma from "../../assets/images/webp/comma.webp";
 const Clients = () => {
     return (
         <div className='lg:py-24 md:py-16 py-10'>
-            <div className="container mb-28 pb-1">
+            <div className="container mb-14 lg:mb-28 pb-1">
                 <PrimaryHeading text="Here’s what our" yellowText="clients say" />
                 <PrimaryHeading text="about us...." yellowText="" />
-                <div className="mt-14 pt-1 relative clients">
+                <div className="md:mt-14 sm:mt-8 mt-5 pt-1 relative clients">
                     <Swiper
                         spaceBetween={24}
                         slidesPerView={2}

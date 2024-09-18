@@ -10,11 +10,11 @@ import star from "../../assets/images/webp/yellow-star.webp";
 
 const Meet = () => {
   return (
-    <div className='py-12 relative'>
-      <div className="container my-1.5 relative z-[1]">
+    <div className='sm:py-12 py-10 relative'>
+      <div className="container md:my-1.5 relative z-[1]">
         <PrimaryHeading text='Meet' yellowText='DatingStars' />
-        <PrimaryParagraph className='mt-4 pb-1 text-center w-fit mx-auto' text='Lorem ipsum dolor sit amet consectetur. Interdum est donec lacus vitae elit dictum eros cras sagittis.' />
-        <div className="mt-14 relative meet">
+        <PrimaryParagraph className='md:mt-4 sm:mt-3 mt-2 pb-1 text-center w-fit mx-auto' text='Lorem ipsum dolor sit amet consectetur. Interdum est donec lacus vitae elit dictum eros cras sagittis.' />
+        <div className="md:mt-14 sm:mt-8 mt-5 relative meet">
           <Swiper
             spaceBetween={24}
             slidesPerView={3}
@@ -36,11 +36,6 @@ const Meet = () => {
               },
               640: {
                 slidesPerView: 2,
-                spaceBetween: 16,
-              },
-              768: {
-                slidesPerView: 2,
-                spaceBetween: 16,
               },
               1024: {
                 slidesPerView: 3,
@@ -52,8 +47,8 @@ const Meet = () => {
               <SwiperSlide key={idx}>
                 <div data-aos="zoom-in" className='flex overflow-hidden relative max-w-[364px] w-full rounded-[22px] group'>
                   <img src={i.img} alt="tower" className='w-full transition_slow group-hover:scale-110' />
-                  <div className='p-2.5 absolute bottom-[21px] left-1/2 -translate-x-1/2 border rounded-md w-11/12 xl:w-full max-w-[309px] min-h-[75px] backdrop-blur-sm bg-[#0000001A]'>
-                    <p data-aos="zoom-in" className='text-white text-base font-normal font-inter'>{i.title}</p>
+                  <div className='sm:p-2.5 p-1.5 absolute bottom-[21px] left-1/2 -translate-x-1/2 border rounded-md w-11/12 xl:w-full max-w-[309px] sm:min-h-[75px] backdrop-blur-sm bg-[#0000001A]'>
+                    <p data-aos="zoom-in" className='text-white text-sm sm:text-base font-normal font-inter'>{i.title}</p>
                     <div className='flex items-center justify-between mt-[6px]'>
                       <div data-aos="zoom-in" className='flex items-center gap-2'>
                         <Icon iconName='calendarIcon' />
@@ -80,8 +75,8 @@ const Meet = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center md:pb-11 mb-0.5" data-aos="zoom-in">
-          <PrimaryButton hoverClass='group-hover:bg-white' className='w-[288px] h-[48px] mt-[60px]' text='Book A Meeting With Our Team!' />
+        <div className="flex justify-center lg:pb-11 lg:mb-0.5" data-aos="zoom-in">
+          <PrimaryButton hoverClass='group-hover:bg-white' className='sm:w-[288px] w-[250px] h-10 md:h-12 sm:mt-12 mt-8 md:mt-[60px]' text='Book A Meeting With Our Team!' />
         </div>
       </div>
       <img src={star} alt="star" className='bottom-24 right-0 absolute pointer-events-none animate-spin animate-duration' />

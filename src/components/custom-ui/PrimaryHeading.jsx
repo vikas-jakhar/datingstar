@@ -13,7 +13,7 @@ const PrimaryHeading = ({
         <h2 data-aos="zoom-in"
             {...props}
             style={{ fontSize: `clamp(${minFontSize}px, ${sizeReducer}vw, ${maxFontSize}px)` }}
-            className={`${className} font-raleway font-semibold text-white text-center md:leading-custom-xl`}
+            className={`${className} font-raleway leading-8 md:leading-9 font-semibold text-white text-center lg:leading-custom-xl`}
         >
             {text}
             <span className={`font-raleway font-semibold text-off-yellow`}> {yellowText}</span>
